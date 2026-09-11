@@ -1,4 +1,4 @@
-FROM node:hydrogen-buster
+FROM node:hydrogen-bullseye
 
 COPY graphserver.js .
 COPY package.json .
@@ -10,5 +10,4 @@ RUN apt-get update && \
     rm -rf /var/lib/apt/lists/*
 
 EXPOSE 4000
-
 CMD ["node", "graphserver.js"]
