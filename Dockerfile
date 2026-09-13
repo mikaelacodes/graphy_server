@@ -5,7 +5,7 @@ COPY package.json .
 COPY UScities.json .
 
 RUN apt-get update && \
-    apt-get install -y --only-upgrade git git-man && \
+    apt-get upgrade -y && \
     npm install && \
     rm -rf /var/lib/apt/lists/*
 
