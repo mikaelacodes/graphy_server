@@ -1,4 +1,4 @@
-FROM node:hydrogen-bullseye
+FROM node:iron-bullseye
 
 COPY graphserver.js .
 COPY package.json .
